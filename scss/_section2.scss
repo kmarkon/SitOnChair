@@ -1,0 +1,42 @@
+.section2{
+  // border:1px solid red;
+  height: auto;
+
+    [class*="col-"]{
+      // border:1px solid blue;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      position: relative;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .topic{
+        width: 100%;
+        padding: 7px;
+        position: absolute;
+        top:60%;
+        background-color: rgba(255,255,255,0.5);
+        // opacity: 0.5;
+        h4{
+          width: 60%;
+          color:map-get($colors, color2);
+          font-weight:500;
+          border-bottom: 3px solid map-get($colors, color4);
+
+        }
+      }//ending .topic
+    }//ending col-md-4
+
+    .box3_1{
+      border:1px solid map-get($colors, color5);
+      padding: 4%;
+      h4{
+        width: 60%;
+        margin-top: 5px;
+        margin-bottom: 14px;
+        font-weight: bold;
+        border-bottom:4px solid map-get($colors, color4);
+      }
+    }//ending .box3
+}//ending .section2

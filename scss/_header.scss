@@ -1,0 +1,37 @@
+.navbar-inverse {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+
+  #header {
+    div.navbar-header {
+      .navbar-brand {
+        color: map-get($colors, color1)!important;
+        letter-spacing: 1px;
+
+        span {
+          color: map-get($colors, color4)!important;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #menu {
+      width: 100%;
+
+      .navbar-nav {
+        li {
+          a {
+            color: map-get($colors, color1)!important;
+          }
+          a:hover{
+            color: map-get($colors, color4)!important;
+          }
+        }
+        //li
+      }
+      //.navbar-nav
+    }
+  }
+  //#header
+}
+//.navbar-inverse
