@@ -1,0 +1,56 @@
+[class*="col-"] {
+  .circle_big_2 {
+    background-color: map-get($colors, color4);
+    border: 1px solid map-get($colors, color4);
+    top: -40px;
+
+    .circle_small_2 {
+      background-color: lighten(map-get($colors, color3), 48%);
+      border: 1px solid lighten(map-get($colors, color3), 48%);
+    }
+  }// ending .circle_big_2
+
+  .box_2 {
+    border: 1px solid map-get($colors, color4);
+    background-color: map-get($colors, color4);
+    h3{
+      color: lighten(map-get($colors, color3), 48%);
+    }
+    .price_circle{
+      background-color:lighten(map-get($colors, color3), 48%);
+      border: 1px solid map-get($colors, color4);
+
+      p {
+        color: map-get($colors, color4);
+      }
+
+      h2 {
+        color: map-get($colors, color4);
+      }
+    }
+    .plan_1,.plan_3{
+      background-color: lighten(map-get($colors, color3), 48%);
+      p{
+        color: lighten(map-get($colors, color3), 5%);
+      }
+    }// ending .plan_1
+    .plan_2 {
+      background-color: lighten(map-get($colors, color3), 40%);
+      p{
+        color: lighten(map-get($colors, color3), 5%);
+      }
+    }
+    .plan_4 {
+      background-color: map-get($colors, color4);
+      p{
+        visibility: hidden;
+      }
+    }
+
+    a.btn{
+      background-color: map-get($colors, color1);
+      border: 1px solid map-get($colors, color4);
+      color:map-get($colors, color4);
+    }
+  }//ending .box_1
+}//ending .col-

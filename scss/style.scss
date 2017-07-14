@@ -1,4 +1,4 @@
-$colors:(color1:white, color2:black,color3:grey,color4:#27C7AB,color5:lightgrey);
+$colors:(color1:white, color2:black,color3:grey,color4:#27C7AB);
 *{
   margin:0;
   padding:0;
@@ -11,3 +11,6 @@ body{
 @import"section1.scss";
 @import"section2.scss";
 @import"section3.scss";
+@import"box_1.scss";
+@import"box_2.scss";
+@import"box_3.scss";
