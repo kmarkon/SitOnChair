@@ -5,6 +5,7 @@
       margin-top: 2%;
       margin-bottom: 5%;
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
       align-items: center;
 
@@ -18,16 +19,19 @@
       form{
         width: 100%;
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         justify-content: center;
         input,textarea{
           display: flex;
+          display: -webkit-flex;
           justify-content: center;
           margin-bottom: 3%;
           border:0.5px solid map-get($colors, color4);
           padding: 5px;
           text-decoration: none;
           height: 50px;
+          outline-color:map-get($colors, color3);
         }
         textarea{
           height: 163px;
@@ -46,6 +50,23 @@
         }
 
       }//ending .form
+      .accept{
+        width: 80%;
+        color: lighten(map-get($colors, color3), 10%);
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .form_ok{
+          border:1px solid map-get($colors, color4);
+          margin-right: 5%;
+        }
+        p{
+          margin-bottom: 0;
+          font-size:16px;
+        }
+      }
       .btn{
         width: 80%;
         background-color: map-get($colors,color4);

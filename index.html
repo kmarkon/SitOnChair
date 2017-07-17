@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
 </head>
 
 <body>
@@ -201,7 +201,9 @@
             <img src="images/red_chair.png" />
           </div>
           <div class="accept">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <div class="form_ok">
+              <img src="images/form_ok.jpg" />
+            </div>
             <p>Zgadzam się na przetwarzanie danych osoowych</p>
           </div>
           <a href="#" class="btn btn-primary btn-lg">Wyślij</a>
@@ -212,19 +214,23 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-7 col-sm-12 col-sx-12">
+        <div class="col-md-7 col-sm-12 col-sx-12 left_side">
           <p>Copy right 2014 | All rights Reserved Sit On Chair</p>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12">
-          <img src="images/flickr.png" />
-          <img src="images/vimeo.png" />
-          <img src="images/pinterest.png" />
-          <img src="images/twitter.png" />
-        </div>
-        <div class="col-md-2 col-sm-12 col-xs-12">
-          <p>sit <span>on</span>chair</p>
-        </div>
-      </div>
+        <div class="col-md-5 col-sm-12 col-sx-12 right_side">
+          <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12 images">
+              <img src="images/flickr.png" />
+              <img src="images/vimeo.png" />
+              <img src="images/pinterest.png" />
+              <img src="images/twitter.png" />
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12 sign">
+              <p>sit <span>on</span> chair</p>
+            </div>
+          </div><!--ending .row-->
+        </div><!--ending .right_side-->
+      </div><!--ending .row-->
     </div>
   </footer>
 
