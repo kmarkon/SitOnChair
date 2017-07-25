@@ -1,56 +1,87 @@
 .section4 {
+  #border {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .border {
+      margin-bottom: 5%;
+      padding: 0;
+      margin-top: 0;
+
+      .border_contact {
+        height: 3px;
+        background-color: map-get($colors, color4);
+        width: 0;
+      }
+    }
+  }
 
   .row {
     [class*="col-"] {
       margin-top: 2%;
-      margin-bottom: 5%;
+      // margin-bottom: 5%;
       display: flex;
       display: -webkit-flex;
       flex-direction: column;
       align-items: center;
 
       h4 {
+        margin-top: 5%;
         padding-bottom: 3px;
+        margin-bottom: 0;
         text-transform: uppercase;
         font-weight: 500;
         border-bottom: 3px solid map-get($colors, color4);
         width: 100%;
       }
-      form{
+
+      form {
         width: 100%;
         display: flex;
         display: -webkit-flex;
         flex-direction: column;
         justify-content: center;
-        input,textarea{
+
+        input,
+        textarea {
           display: flex;
           display: -webkit-flex;
           justify-content: center;
           margin-bottom: 3%;
-          border:0.5px solid map-get($colors, color4);
+          border: 0.5px solid map-get($colors, color4);
           padding: 5px;
           text-decoration: none;
           height: 50px;
-          outline-color:map-get($colors, color3);
+          outline-color: map-get($colors, color3);
         }
-        textarea{
+
+        textarea {
           height: 163px;
         }
-        ::-webkit-input-placeholder { /* Chrome */
-          color:lighten(map-get($colors, color3), 35%);
-        }
-        :-ms-input-placeholder { /* IE 10+ */
-          color:lighten(map-get($colors, color3), 35%);
-        }
-        ::-moz-placeholder { /* Firefox 19+ */
-          color: lighten(map-get($colors, color3), 35%);
-        }
-        :-moz-placeholder { /* Firefox 4 - 18 */
+
+        ::-webkit-input-placeholder {
+          /* Chrome */
           color: lighten(map-get($colors, color3), 35%);
         }
 
-      }//ending .form
-      .accept{
+        :-ms-input-placeholder {
+          /* IE 10+ */
+          color: lighten(map-get($colors, color3), 35%);
+        }
+
+        ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: lighten(map-get($colors, color3), 35%);
+        }
+
+        :-moz-placeholder {
+          /* Firefox 4 - 18 */
+          color: lighten(map-get($colors, color3), 35%);
+        }
+      }
+      //ending .form
+
+      .accept {
         width: 80%;
         color: lighten(map-get($colors, color3), 10%);
         display: flex;
@@ -58,23 +89,40 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        .form_ok{
-          border:1px solid map-get($colors, color4);
+
+        .form_ok {
+          border: 1px solid map-get($colors, color4);
           margin-right: 5%;
         }
-        p{
+
+        p {
           margin-bottom: 0;
-          font-size:16px;
+          font-size: 16px;
         }
       }
-      .btn{
+
+      .btn {
         width: 80%;
         background-color: map-get($colors,color4);
-        border:1px solid map-get($colors,color4);
+        border: 1px solid map-get($colors,color4);
         font-size: 20px;
         text-transform: uppercase;
         margin-top: 3%;
       }
-    }//ending .col_
-  }//ending .row
-}//ending .section4
+    }
+    //ending .col_
+  }
+  //ending .row
+}
+//ending .section4
+@media (min-width: 700px) and (max-width:993px) {
+  .section4 {
+    .row {
+      [class*="col-"] {
+        h4 {
+          font-size: 24px!important;
+        }
+      }
+    }
+  }
+}

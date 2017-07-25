@@ -13,16 +13,16 @@
 
 <body>
   <!--header-->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse" data-spy="affix">
     <div class="container-fluid" id="header">
-        <div class="navbar-header">
-          <a class="navbar-brand logo" href="#">Sit<span>On</span>Chair</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+      <div class="navbar-header">
+        <a class="navbar-brand logo" href="#">Sit<span>On</span>Chair</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-        </div>
+      </div>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav navbar-right">
           <li class="ative"><a href="#">Home</a></li>
@@ -37,9 +37,9 @@
   <section class="container-fluid section1">
     <div id="theCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#theCarousel" data-slide-to="0"   class="active"></li>
+        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#theCarousel" data-slide-to="1" </li>
-        <li data-target="#theCarousel" data-slide-to="2" </li>
+          <li data-target="#theCarousel" data-slide-to="2" </li>
       </ol>
 
       <div class="carousel-inner ">
@@ -47,7 +47,8 @@
           <img class="col-md-6 col-sm-4 col-sx-12" src="images/black_chair.png" />
           <div class="col-md-6 col-sm-8 col-sx-12 description ">
             <h1>sit <span>on</span> our <span>chair</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit.</p>
             <p><a href="#" class="btn btn-primary btn-lg">Get more</a></p>
           </div>
         </div>
@@ -55,22 +56,26 @@
           <img class="col-md-6 col-sm-4 col-sx-12" src="images/black_chair.png" />
           <div class="col-md-6 col-sm-8 col-sx-12 description">
             <h1>Thousands <span>of </span>Colours</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit.</p>
           </div>
         </div>
         <div class="item d-flex align-items-center justify-content-cente">
           <img class="col-md-6 col-sm-4 col-sx-12" src="images/black_chair.png" />
           <div class="col-md-6 col-sm-8 col-sx-12 description">
             <h1>Amazeing <span>Feel</span>ing</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit.</p>
           </div>
         </div>
-      </div><!-- ending .carousel-inner-->
+      </div>
+      <!-- ending .carousel-inner-->
       <a class="left carousel-control" href="#theCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span></a>
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#theCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- ending #theCarousel-->
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <!-- ending #theCarousel-->
   </section>
 
   <section class="container section2">
@@ -92,8 +97,7 @@
           <h4>Finds all inputs</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br />
-            <br />
-            Sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br /> Sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
       </div>
@@ -106,9 +110,16 @@
           <h4>cennik</h4>
         </div>
       </div>
+      <div class="row" id="border">
+        <div class="col-md-4 col-sm-12 col-sx-12 border">
+          <div class="border_price"></div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-4 col-sm-12">
-          <div class="circle_big_1"><div class="circle_small_1"></div></div>
+          <div class="circle_big_1">
+            <div class="circle_small_1"></div>
+          </div>
           <div class="box_1">
             <h3>basic plan</h3>
             <div class="price_circle">
@@ -132,7 +143,9 @@
 
         </div>
         <div class="col-md-4 col-sm-12">
-          <div class="circle_big_2"><div class="circle_small_2"></div></div>
+          <div class="circle_big_2">
+            <div class="circle_small_2"></div>
+          </div>
           <div class="box_2">
             <h3>standard plan</h3>
             <div class="price_circle">
@@ -155,7 +168,9 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <div class="circle_big_3"><div class="circle_small_3"></div></div>
+          <div class="circle_big_3">
+            <div class="circle_small_3"></div>
+          </div>
           <div class="box_3">
             <h3>advance plan</h3>
             <div class="price_circle">
@@ -188,10 +203,15 @@
           <h4>Kontakt</h4>
         </div>
       </div>
+      <div class="row" id="border">
+        <div class="col-md-4 col-sm-12 col-sx-12 border">
+          <div class="border_contact"></div>
+        </div>
+      </div>
       <div class="row contact">
         <div class="col-md-7 col-sm-12 col-xs-12">
           <form>
-            <input placeholder="Imię"/>
+            <input placeholder="Imię" />
             <input placeholder="email" />
             <textarea placeholder="Wiadomość"></textarea>
           </form>
@@ -228,14 +248,19 @@
             <div class="col-md-5 col-sm-12 col-xs-12 sign">
               <p>sit <span>on</span> chair</p>
             </div>
-          </div><!--ending .row-->
-        </div><!--ending .right_side-->
-      </div><!--ending .row-->
+          </div>
+          <!--ending .row-->
+        </div>
+        <!--ending .right_side-->
+      </div>
+      <!--ending .row-->
     </div>
   </footer>
 
+  <script src="jquery-3.1.1.js"></script>
+  <script src="app.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
